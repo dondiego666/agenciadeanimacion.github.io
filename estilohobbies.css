@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bokor&family=Bungee+Hairline&family=Kdam+Thmor+Pro&family=Nunito:wght@200&family=Syne+Mono&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+.redessociales{
+    width: 100%;
+    height: 100px;
+    background-color: #1c1c1c;
+    text-align: center;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position:fixed;
+    z-index: 1;
+
+}
+.iconos{
+    display: flex;
+}
+.iconos li a{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    background-color:#171515 ;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.iconos li a:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EEEEEE;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: .5s;
+}
+.iconos li a:hover::before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #EEEEEE;
+}
+.iconos li a:hover{
+    color: #FFFFFF;
+    box-shadow: 0 0 15px #EEEEEE;
+}
+/****************Termina redes sociales ***********************/
+#navegacion{
+    background-color: #1c1c1c;
+    width: 20%;
+    margin-right: 15px;
+}
+#listashp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+#hobbies{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+#hobbies:hover{
+    text-shadow: 0px 0px 5px #EEEEEE;
+}
+/*************Section de hobbies************/
+#mishobbies{
+    width: 100%;
+    height: 670px;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+#mishobbies img{
+    position: relative;
+    display: block;
+}
+#mishobbiesarticulo{
+    width: 20%;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+}
+#mishobbies h1{
+    color: yellow;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#mishobbies p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+/**********Termina section de hobbies de la pagina hobbies********/
+/**********Inicia la seccion de 3 imagens de pagina hobbies********/
+#las3imagenes{
+    width: 100%;
+    height: 700px;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#imagen1, #imagen2, #imagen3{
+    width: 25%;
+    height: 500px;
+    background-color: #1c1c1c;
+    margin: 25px;
+    cursor: pointer;
+}
+/***************Estilo a la imagen 1 Futbol*****************/
+#imagen1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+#imagen1 img{
+    display: block;
+    position: relative;
+}
+#imagen1 #textoimagen1{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+#textoimagen1 h1{
+    font-size: 2rem;
+    color: yellow;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+#textoimagen1 p{
+    font-size: 20px;
+    color: #EEEEEE;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#textoimagen1 h1, #textoimagen1 p{
+    top: 180px;
+}
+#imagen1 #textoimagen1{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .9);
+    transition: all .4s ease-in-out;
+}
+#imagen1:hover #textoimagen1{
+    opacity: 1;
+}
+/***************Termina estilo a la imagen 1 Futbol*****************/
+/****************Inicia estilo a la imagen 2 videojuegos***********/
+#imagen2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+#imagen2 img{
+    display: block;
+    position: relative;
+}
+#imagen2 #textoimagen2{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+#textoimagen2 h1{
+    font-size: 2rem;
+    color: yellow;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+#textoimagen2 p{
+    font-size: 20px;
+    color: #EEEEEE;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#textoimagen2 h1, #textoimagen2 p{
+    top: 180px;
+}
+#imagen2 #textoimagen2{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .9);
+    transition: all .4s ease-in-out;
+}
+#imagen2:hover #textoimagen2{
+    opacity: 1;
+}
+/****************Termina estilo de imagen 2**************/
+/****************Inicia estilo de imagen 3*************/
+#imagen3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+#imagen3 img{
+    display: block;
+    position: relative;
+}
+#imagen3 #textoimagen3{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+#textoimagen3 h1{
+    font-size: 2rem;
+    color: yellow;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+#textoimagen3 p{
+    font-size: 20px;
+    color: #EEEEEE;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#textoimagen3 h1, #textoimagen3 p{
+    top: 180px;
+}
+#imagen3 #textoimagen3{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .9);
+    transition: all .4s ease-in-out;
+}
+#imagen3:hover #textoimagen3{
+    opacity: 1;
+}
+/**************Termina estilo imagen 3********************/
+#video{
+    width: 100%;
+    height: 600px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#video video{
+    width: 80%;
+    height: 400px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+}
+#artvideo{
+    text-align: justify;
+    width: 40%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+#artvideo h1{
+    font-size: 3rem;
+    color: #171515;
+    margin-bottom: 15px;
+}
+#artvideo p{
+    font-size: 20px;
+    color: #171515;
+}
+/**********Inicia footer de pagina hobbies********/
+.piepagina{
+    width: 100%;
+    height: 300px;
+    background-color: #262626;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/**************Ternina el footer****************/
+/************Inicia redes sociales del footer***********/
+.navegacion2{
+    position: relative;
+    top: -25%;
+    left: -25%;
+}
+.iconos2{
+    display: flex;
+}
+.iconos2 li a{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    background-color:#171515 ;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.iconos2 li a:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EEEEEE;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: .5s;
+}
+.iconos2 li a:hover::before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #EEEEEE;
+}
+.iconos2 li a:hover{
+    color: #FFFFFF;
+    box-shadow: 0 0 15px #EEEEEE;
+}
+/************Termina redes sociales del footer***********/
+/***********Inicia derechos reservados*************/
+.derechos{
+    position: relative;
+    top: 48%;
+    left: -30%;
+    
+}
+.copy{
+    font-size: 1rem;
+    width: 100%;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+/************Termina derechos reservados***********/
+/***********Inicia formulario****************/
+.formulario{
+    width: 20%;
+    height: 300px;
+    display: block;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    left: 40%;
+    background-color: #262626;
+}
+.formulario form .informacion, textarea{
+    width: 80%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.formulario .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: yellow;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.formulario .btn-enviar:hover{
+    color: white;
+}
+/****************Termina Formulario***********/
+/*********Inicia texto en el footer**********/
+.contactame{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    width: 30%;
+    height: 100px;
+    background-color: #262626;
+    position: relative;
+    top: 0%;
+    left: 20%;
+    text-align: justify;
+    
+
+}
